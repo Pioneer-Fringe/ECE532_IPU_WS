@@ -1,0 +1,27 @@
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Block Memory Generator module part3_tb.DUT.design_1_i.IPU_0.inst.bram.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+XilinxAXIVIP: Found at Path: part3_tb.DUT.design_1_i.axi_vip_1.inst
+Block Memory Generator module part3_tb.DUT.design_1_i.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+IPU CORE Name: 0x4950552a
+IPU FRAME_SIZE: 0xaaaa0201
+IPU FRAME_SIZE: 0x00020004
+IPU OP STATUS: 0x00000004
+IPU OP STATUS: 0x00000001
+IPU OP STATUS: 0x00000001
+REF IMG 0 + 1: 0x04030201
+REF IMG 2 + 3: 0x08070605
+REF IMG 4 + 5: 0x0c0b0a09
+REF IMG 6 + 7: 0x100f0e0d
+IPU OP STATUS: 0x00000009
+IPU OP STATUS: 0x00000009
+IPU OP STATUS: 0x00000003
+PRCD IMG: 0x0000007a
+BLOBS ROW 0 ADDR: 0x00029000
+BLOBS ROW 0 NUM: 0x00000002
+BLOBS ROW 1 ADDR: 0x00029008
+BLOBS ROW 1 NUM: 0x00000001
+BLOBS 0: 0x00010001
+BLOBS 1: 0x00030003
+BLOBS 2: 0x00020000
+BLOBS 3: 0x00000000

@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj/differ_proj.sim/sim_1/impl/timing/xsim/tb_rgb444_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb444diff
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj/differ_proj.srcs/sim_1/new/tb_rgb444.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_rgb444

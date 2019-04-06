@@ -1,0 +1,489 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Mar 27 23:06:40 2019
+# Process ID: 18184
+# Current directory: E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1
+# Command line: vivado.exe -log vi_sys_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vi_sys_wrapper.tcl
+# Log file: E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/vi_sys_wrapper.vds
+# Journal file: E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vi_sys_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ECE532/WorkSpace/IPU_proj/Packaged/0324-1715'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ECE532/WorkSpace/IPU_proj/Packaged/0327-2300'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ECE532/WorkSpace/IPU_proj/Packaged/0327-0230'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/ECE532/WorkSpace/IPU_proj/Packaged/0325-0030'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 370.684 ; gain = 71.785
+Command: synth_design -top vi_sys_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12928 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 478.973 ; gain = 101.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_wrapper' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/hdl/vi_sys_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1519]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_IPU_0_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_IPU_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_IPU_0_0' (1#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_IPU_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_axi_bram_ctrl_0_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_axi_bram_ctrl_0_0' (2#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_axi_interconnect_0_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:2127]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_13OY7C1' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_13OY7C1' (3#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:12]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1F6XA28' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1080]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1F6XA28' (4#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1080]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_6CTXGH' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1372]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_6CTXGH' (5#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1372]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_xbar_1' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_xbar_1' (6#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_axi_interconnect_0_0' (7#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:2127]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_axi_uartlite_0_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_axi_uartlite_0_0' (8#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_blk_mem_gen_0_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_blk_mem_gen_0_0' (9#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_blk_mem_gen_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'blk_mem_gen_0' of module 'vi_sys_blk_mem_gen_0_0' requires 8 connections, but only 7 given [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1873]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_clk_wiz_1_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_clk_wiz_1_0' (10#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_mdm_1_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_mdm_1_0' (11#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_microblaze_0_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_microblaze_0_0' (12#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_microblaze_0_axi_intc_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_microblaze_0_axi_intc_0' (13#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_microblaze_0_axi_periph_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:2619]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_AE0XBE' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:158]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_AE0XBE' (14#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:158]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_12LF41N' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:290]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_12LF41N' (15#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:290]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_196D6FD' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:422]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_196D6FD' (16#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:422]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_3J3KNS' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:568]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_3J3KNS' (17#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:568]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1UXSUGD' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:700]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1UXSUGD' (18#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:700]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_59RO6Z' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1226]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_59RO6Z' (19#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1226]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_xbar_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_xbar_0' (20#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_microblaze_0_axi_periph_0' (21#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:2619]
+WARNING: [Synth 8-350] instance 'microblaze_0_axi_periph' of module 'vi_sys_microblaze_0_axi_periph_0' requires 122 connections, but only 111 given [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1978]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_178VJYG' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:846]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_dlmb_bram_if_cntlr_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_dlmb_bram_if_cntlr_0' (22#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_dlmb_v10_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_dlmb_v10_0' (23#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'vi_sys_dlmb_v10_0' requires 25 connections, but only 24 given [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:992]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_ilmb_bram_if_cntlr_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_ilmb_bram_if_cntlr_0' (24#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_ilmb_v10_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_ilmb_v10_0' (25#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'vi_sys_ilmb_v10_0' requires 25 connections, but only 24 given [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1038]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_lmb_bram_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_lmb_bram_0' (26#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'lmb_bram' of module 'vi_sys_lmb_bram_0' requires 16 connections, but only 14 given [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1063]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_178VJYG' (27#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:846]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_microblaze_0_xlconcat_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_microblaze_0_xlconcat_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_microblaze_0_xlconcat_0' (28#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_microblaze_0_xlconcat_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vi_sys_rst_clk_wiz_1_100M_0' [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_rst_clk_wiz_1_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_rst_clk_wiz_1_100M_0' (29#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/.Xil/Vivado-18184-DESKTOP-1GACB3R/realtime/vi_sys_rst_clk_wiz_1_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_1_100M' of module 'vi_sys_rst_clk_wiz_1_100M_0' requires 10 connections, but only 9 given [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:2115]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys' (30#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/synth/vi_sys.v:1519]
+INFO: [Synth 8-6155] done synthesizing module 'vi_sys_wrapper' (31#1) [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/hdl/vi_sys_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_59RO6Z has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_59RO6Z has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_59RO6Z has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_59RO6Z has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_1UXSUGD has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_1UXSUGD has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_1UXSUGD has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_1UXSUGD has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_3J3KNS has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_3J3KNS has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_3J3KNS has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_3J3KNS has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_196D6FD has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_196D6FD has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_196D6FD has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_196D6FD has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_12LF41N has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_12LF41N has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_12LF41N has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_12LF41N has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_AE0XBE has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_AE0XBE has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_AE0XBE has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_AE0XBE has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_6CTXGH has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_6CTXGH has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_6CTXGH has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_6CTXGH has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1F6XA28 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1F6XA28 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1F6XA28 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1F6XA28 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_13OY7C1 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_13OY7C1 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_13OY7C1 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_13OY7C1 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design vi_sys has unconnected port switch_0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 534.766 ; gain = 157.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 534.766 ; gain = 157.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 534.766 ; gain = 157.160
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_microblaze_0_0/vi_sys_microblaze_0_0/vi_sys_microblaze_0_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_microblaze_0_0/vi_sys_microblaze_0_0/vi_sys_microblaze_0_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_microblaze_0_axi_intc_0/vi_sys_microblaze_0_axi_intc_0/vi_sys_microblaze_0_axi_intc_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_microblaze_0_axi_intc_0/vi_sys_microblaze_0_axi_intc_0/vi_sys_microblaze_0_axi_intc_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_axi_intc'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_microblaze_0_xlconcat_0/vi_sys_microblaze_0_xlconcat_0/vi_sys_microblaze_0_xlconcat_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_xlconcat'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_microblaze_0_xlconcat_0/vi_sys_microblaze_0_xlconcat_0/vi_sys_microblaze_0_xlconcat_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_xlconcat'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_mdm_1_0/vi_sys_mdm_1_0/vi_sys_mdm_1_0_in_context.xdc] for cell 'vi_sys_i/mdm_1'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_mdm_1_0/vi_sys_mdm_1_0/vi_sys_mdm_1_0_in_context.xdc] for cell 'vi_sys_i/mdm_1'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_clk_wiz_1_0/vi_sys_clk_wiz_1_0/vi_sys_clk_wiz_1_0_in_context.xdc] for cell 'vi_sys_i/clk_wiz_1'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_clk_wiz_1_0/vi_sys_clk_wiz_1_0/vi_sys_clk_wiz_1_0_in_context.xdc] for cell 'vi_sys_i/clk_wiz_1'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_rst_clk_wiz_1_100M_0/vi_sys_rst_clk_wiz_1_100M_0/vi_sys_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'vi_sys_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_rst_clk_wiz_1_100M_0/vi_sys_rst_clk_wiz_1_100M_0/vi_sys_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'vi_sys_i/rst_clk_wiz_1_100M'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_axi_uartlite_0_0/vi_sys_axi_uartlite_0_0/vi_sys_axi_uartlite_0_0_in_context.xdc] for cell 'vi_sys_i/axi_uartlite_0'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_axi_uartlite_0_0/vi_sys_axi_uartlite_0_0/vi_sys_axi_uartlite_0_0_in_context.xdc] for cell 'vi_sys_i/axi_uartlite_0'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_xbar_0/vi_sys_xbar_0/vi_sys_xbar_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_xbar_0/vi_sys_xbar_0/vi_sys_xbar_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_dlmb_v10_0/vi_sys_dlmb_v10_0/vi_sys_ilmb_v10_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_dlmb_v10_0/vi_sys_dlmb_v10_0/vi_sys_ilmb_v10_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_ilmb_v10_0/vi_sys_ilmb_v10_0/vi_sys_ilmb_v10_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_ilmb_v10_0/vi_sys_ilmb_v10_0/vi_sys_ilmb_v10_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_dlmb_bram_if_cntlr_0/vi_sys_dlmb_bram_if_cntlr_0/vi_sys_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_dlmb_bram_if_cntlr_0/vi_sys_dlmb_bram_if_cntlr_0/vi_sys_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_ilmb_bram_if_cntlr_0/vi_sys_ilmb_bram_if_cntlr_0/vi_sys_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_ilmb_bram_if_cntlr_0/vi_sys_ilmb_bram_if_cntlr_0/vi_sys_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_lmb_bram_0/vi_sys_lmb_bram_0/vi_sys_lmb_bram_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_lmb_bram_0/vi_sys_lmb_bram_0/vi_sys_lmb_bram_0_in_context.xdc] for cell 'vi_sys_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_axi_bram_ctrl_0_0/vi_sys_axi_bram_ctrl_0_0/vi_sys_axi_bram_ctrl_0_0_in_context.xdc] for cell 'vi_sys_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_axi_bram_ctrl_0_0/vi_sys_axi_bram_ctrl_0_0/vi_sys_axi_bram_ctrl_0_0_in_context.xdc] for cell 'vi_sys_i/axi_bram_ctrl_0'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_blk_mem_gen_0_0/vi_sys_blk_mem_gen_0_0/vi_sys_blk_mem_gen_0_0_in_context.xdc] for cell 'vi_sys_i/blk_mem_gen_0'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_blk_mem_gen_0_0/vi_sys_blk_mem_gen_0_0/vi_sys_blk_mem_gen_0_0_in_context.xdc] for cell 'vi_sys_i/blk_mem_gen_0'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_IPU_0_0/vi_sys_IPU_0_0/vi_sys_IPU_0_0_in_context.xdc] for cell 'vi_sys_i/IPU_0'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_IPU_0_0/vi_sys_IPU_0_0/vi_sys_IPU_0_0_in_context.xdc] for cell 'vi_sys_i/IPU_0'
+Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_xbar_1/vi_sys_xbar_1/vi_sys_xbar_1_in_context.xdc] for cell 'vi_sys_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_xbar_1/vi_sys_xbar_1/vi_sys_xbar_1_in_context.xdc] for cell 'vi_sys_i/axi_interconnect_0/xbar'
+Parsing XDC File [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/constrs_1/new/vi_sys_constraints.xdc]
+Finished Parsing XDC File [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/constrs_1/new/vi_sys_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/constrs_1/new/vi_sys_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vi_sys_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vi_sys_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 858.129 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'vi_sys_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'vi_sys_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 858.129 ; gain = 480.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 858.129 ; gain = 480.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_clk_wiz_1_0/vi_sys_clk_wiz_1_0/vi_sys_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  e:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.srcs/sources_1/bd/vi_sys/ip/vi_sys_clk_wiz_1_0/vi_sys_clk_wiz_1_0/vi_sys_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for vi_sys_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/microblaze_0_axi_intc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/microblaze_0_xlconcat. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/IPU_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vi_sys_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 858.129 ; gain = 480.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 858.129 ; gain = 480.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port M04_ACLK
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port M04_ARESETN
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design vi_sys_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design vi_sys_axi_interconnect_0_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design vi_sys_axi_interconnect_0_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design vi_sys_axi_interconnect_0_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design vi_sys_axi_interconnect_0_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design vi_sys_axi_interconnect_0_0 has unconnected port S01_ACLK
+WARNING: [Synth 8-3331] design vi_sys_axi_interconnect_0_0 has unconnected port S01_ARESETN
+WARNING: [Synth 8-3331] design vi_sys has unconnected port switch_0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 858.129 ; gain = 480.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'vi_sys_i/mdm_1/Dbg_Clk_0' to pin 'vi_sys_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'vi_sys_i/mdm_1/Dbg_Update_0' to pin 'vi_sys_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'vi_sys_i/clk_wiz_1/clk_out1' to pin 'vi_sys_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'vi_sys_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'vi_sys_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'vi_sys_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'vi_sys_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'vi_sys_i/axi_bram_ctrl_0/bram_clk_a' to pin 'vi_sys_i/axi_bram_ctrl_0/bbstub_bram_clk_a/O'
+INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 860.121 ; gain = 482.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 860.348 ; gain = 482.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 861.625 ; gain = 484.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 861.813 ; gain = 484.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 861.813 ; gain = 484.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 861.813 ; gain = 484.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 861.813 ; gain = 484.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 861.813 ; gain = 484.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 861.813 ; gain = 484.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |vi_sys_xbar_1                  |         1|
+|2     |vi_sys_xbar_0                  |         1|
+|3     |vi_sys_IPU_0_0                 |         1|
+|4     |vi_sys_axi_bram_ctrl_0_0       |         1|
+|5     |vi_sys_axi_uartlite_0_0        |         1|
+|6     |vi_sys_blk_mem_gen_0_0         |         1|
+|7     |vi_sys_clk_wiz_1_0             |         1|
+|8     |vi_sys_mdm_1_0                 |         1|
+|9     |vi_sys_microblaze_0_0          |         1|
+|10    |vi_sys_microblaze_0_axi_intc_0 |         1|
+|11    |vi_sys_microblaze_0_xlconcat_0 |         1|
+|12    |vi_sys_rst_clk_wiz_1_100M_0    |         1|
+|13    |vi_sys_dlmb_bram_if_cntlr_0    |         1|
+|14    |vi_sys_dlmb_v10_0              |         1|
+|15    |vi_sys_ilmb_bram_if_cntlr_0    |         1|
+|16    |vi_sys_ilmb_v10_0              |         1|
+|17    |vi_sys_lmb_bram_0              |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |vi_sys_IPU_0_0                 |     1|
+|2     |vi_sys_axi_bram_ctrl_0_0       |     1|
+|3     |vi_sys_axi_uartlite_0_0        |     1|
+|4     |vi_sys_blk_mem_gen_0_0         |     1|
+|5     |vi_sys_clk_wiz_1_0             |     1|
+|6     |vi_sys_dlmb_bram_if_cntlr_0    |     1|
+|7     |vi_sys_dlmb_v10_0              |     1|
+|8     |vi_sys_ilmb_bram_if_cntlr_0    |     1|
+|9     |vi_sys_ilmb_v10_0              |     1|
+|10    |vi_sys_lmb_bram_0              |     1|
+|11    |vi_sys_mdm_1_0                 |     1|
+|12    |vi_sys_microblaze_0_0          |     1|
+|13    |vi_sys_microblaze_0_axi_intc_0 |     1|
+|14    |vi_sys_microblaze_0_xlconcat_0 |     1|
+|15    |vi_sys_rst_clk_wiz_1_100M_0    |     1|
+|16    |vi_sys_xbar_0                  |     1|
+|17    |vi_sys_xbar_1                  |     1|
+|18    |IBUF                           |     2|
+|19    |OBUF                           |     1|
++------+-------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------------+------+
+|      |Instance                      |Module                                |Cells |
++------+------------------------------+--------------------------------------+------+
+|1     |top                           |                                      |  1926|
+|2     |  vi_sys_i                    |vi_sys                                |  1923|
+|3     |    axi_interconnect_0        |vi_sys_axi_interconnect_0_0           |   193|
+|4     |    microblaze_0_axi_periph   |vi_sys_microblaze_0_axi_periph_0      |   596|
+|5     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_178VJYG |   496|
++------+------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 861.813 ; gain = 484.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 861.816 ; gain = 160.848
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:38 . Memory (MB): peak = 861.816 ; gain = 484.211
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 64 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 881.613 ; gain = 510.930
+INFO: [Common 17-1381] The checkpoint 'E:/ECE532/WorkSpace/IPU_proj/Verification/MB_Validation/MB_Validation.runs/synth_1/vi_sys_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vi_sys_wrapper_utilization_synth.rpt -pb vi_sys_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 881.613 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 27 23:07:35 2019...

@@ -1,0 +1,240 @@
+23:27:47 **** Build of project IPU_VI_SW_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_6/src"
+make -C microblaze_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_6/src"
+make -C microblaze_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+23:27:52 **** Build of configuration Debug for project IPU_VI_SW ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../IPU_VI_SW_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../IPU_VI_SW_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: IPU_VI_SW.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../IPU_VI_SW_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IPU_VI_SW.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: IPU_VI_SW.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IPU_VI_SW.elf  |tee "IPU_VI_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3112	    308	   3108	   6528	   1980	IPU_VI_SW.elf
+'Finished building: IPU_VI_SW.elf.size'
+' '
+23:28:01 **** Auto Build of configuration Debug for project IPU_VI_SW ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../IPU_VI_SW_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000000;
+              ^
+../src/helloworld.c:64:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000004;
+              ^
+../src/helloworld.c:66:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000008;
+              ^
+../src/helloworld.c:68:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC000000C;
+              ^
+../src/helloworld.c:70:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000010;
+              ^
+../src/helloworld.c:72:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000014;
+              ^
+../src/helloworld.c:74:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000018;
+              ^
+../src/helloworld.c:76:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC000001C;
+              ^
+../src/helloworld.c:79:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A0000C;
+              ^
+../src/helloworld.c:81:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A00008;
+              ^
+../src/helloworld.c:84:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A00004;
+              ^
+../src/helloworld.c:87:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     read_ptr = 0x44A00010;
+              ^
+../src/helloworld.c:90:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000000;
+              ^
+../src/helloworld.c:92:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000004;
+              ^
+../src/helloworld.c:94:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000008;
+              ^
+../src/helloworld.c:96:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC000000C;
+              ^
+../src/helloworld.c:98:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000010;
+              ^
+../src/helloworld.c:100:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000014;
+              ^
+../src/helloworld.c:102:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000018;
+              ^
+../src/helloworld.c:104:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC000001C;
+              ^
+../src/helloworld.c:107:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A0000C;
+              ^
+../src/helloworld.c:109:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A00008;
+              ^
+../src/helloworld.c:112:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A00004;
+              ^
+../src/helloworld.c:57:6: warning: variable 'read_data' set but not used [-Wunused-but-set-variable]
+  int read_data;
+      ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: IPU_VI_SW.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../IPU_VI_SW_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IPU_VI_SW.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: IPU_VI_SW.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IPU_VI_SW.elf  |tee "IPU_VI_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3748	    308	   3112	   7168	   1c00	IPU_VI_SW.elf
+'Finished building: IPU_VI_SW.elf.size'
+' '
+23:38:28 **** Auto Build of configuration Debug for project IPU_VI_SW ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../IPU_VI_SW_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000000;
+              ^
+../src/helloworld.c:64:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000004;
+              ^
+../src/helloworld.c:66:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000008;
+              ^
+../src/helloworld.c:68:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC000000C;
+              ^
+../src/helloworld.c:70:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000010;
+              ^
+../src/helloworld.c:72:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000014;
+              ^
+../src/helloworld.c:74:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000018;
+              ^
+../src/helloworld.c:76:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC000001C;
+              ^
+../src/helloworld.c:79:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A0000C;
+              ^
+../src/helloworld.c:81:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A00008;
+              ^
+../src/helloworld.c:84:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A00004;
+              ^
+../src/helloworld.c:87:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     read_ptr = 0x44A00010;
+              ^
+../src/helloworld.c:90:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000000;
+              ^
+../src/helloworld.c:92:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000004;
+              ^
+../src/helloworld.c:94:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000008;
+              ^
+../src/helloworld.c:96:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC000000C;
+              ^
+../src/helloworld.c:98:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000010;
+              ^
+../src/helloworld.c:100:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000014;
+              ^
+../src/helloworld.c:102:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC0000018;
+              ^
+../src/helloworld.c:104:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0xC000001C;
+              ^
+../src/helloworld.c:107:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A0000C;
+              ^
+../src/helloworld.c:109:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A00008;
+              ^
+../src/helloworld.c:112:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     data_ptr = 0x44A00004;
+              ^
+../src/helloworld.c:57:6: warning: variable 'read_data' set but not used [-Wunused-but-set-variable]
+  int read_data;
+      ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: IPU_VI_SW.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../IPU_VI_SW_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "IPU_VI_SW.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: IPU_VI_SW.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size IPU_VI_SW.elf  |tee "IPU_VI_SW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3748	    308	   3112	   7168	   1c00	IPU_VI_SW.elf
+'Finished building: IPU_VI_SW.elf.size'
+' '
+23:38:37 **** Incremental Build of configuration Debug for project IPU_VI_SW ****
+make all 
+make: Nothing to be done for `all'.

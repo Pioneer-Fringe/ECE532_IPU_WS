@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../bd/vi_sys/ip/vi_sys_microblaze_0_0/sim/vi_sys_microblaze_0_0.vhd" \
+"../../../bd/vi_sys/ip/vi_sys_microblaze_0_axi_intc_0/sim/vi_sys_microblaze_0_axi_intc_0.vhd" \
+"../../../bd/vi_sys/ip/vi_sys_mdm_1_0/sim/vi_sys_mdm_1_0.vhd" \
+"../../../bd/vi_sys/ip/vi_sys_rst_clk_wiz_1_100M_0/sim/vi_sys_rst_clk_wiz_1_100M_0.vhd" \
+"../../../bd/vi_sys/ip/vi_sys_axi_uartlite_0_0/sim/vi_sys_axi_uartlite_0_0.vhd" \
+"../../../bd/vi_sys/ip/vi_sys_dlmb_v10_0/sim/vi_sys_dlmb_v10_0.vhd" \
+"../../../bd/vi_sys/ip/vi_sys_ilmb_v10_0/sim/vi_sys_ilmb_v10_0.vhd" \
+"../../../bd/vi_sys/ip/vi_sys_dlmb_bram_if_cntlr_0/sim/vi_sys_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/vi_sys/ip/vi_sys_ilmb_bram_if_cntlr_0/sim/vi_sys_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/vi_sys/ip/vi_sys_axi_bram_ctrl_0_0/sim/vi_sys_axi_bram_ctrl_0_0.vhd" \
+
+nosort

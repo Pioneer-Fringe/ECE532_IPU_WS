@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Mar 27 22:31:14 2019
+# Process ID: 20248
+# Current directory: E:/ECE532/WorkSpace/IPU_proj/main/IPU_v2.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7104 E:\ECE532\WorkSpace\IPU_proj\main\IPU_v2.0\IPU_v2.0.xpr
+# Log file: E:/ECE532/WorkSpace/IPU_proj/main/IPU_v2.0/vivado.log
+# Journal file: E:/ECE532/WorkSpace/IPU_proj/main/IPU_v2.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ECE532/WorkSpace/IPU_proj/main/IPU_v2.0/IPU_v2.0.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+ipx::package_project -root_dir E:/ECE532/WorkSpace/IPU_proj/Packaged/0327-2300 -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false
+ipx::unload_core e:/ECE532/WorkSpace/IPU_proj/Packaged/0327-2300/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory E:/ECE532/WorkSpace/IPU_proj/Packaged/0327-2300 e:/ECE532/WorkSpace/IPU_proj/Packaged/0327-2300/component.xml
+update_compile_order -fileset sources_1
+set_property previous_version_for_upgrade xilinx.com:user:IPU:1.0 [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {e:/ECE532/WorkSpace/IPU_proj/Packaged/0327-2300 e:/ECE532/WorkSpace/IPU_proj/Packaged/0327-0230 e:/ECE532/WorkSpace/IPU_proj/Packaged/0325-0030 e:/ECE532/WorkSpace/IPU_proj/Packaged/0324-1715 e:/ECE532/WorkSpace/IPU_proj/Packaged/0324-0500 e:/ECE532/WorkSpace/IPU_proj/Packaged/0324-0300 e:/ECE532/WorkSpace/IPU_proj/Packaged/0323-2000 e:/ECE532/WorkSpace/IPU_proj/Packaged/0322-1900} [current_project]
+update_ip_catalog

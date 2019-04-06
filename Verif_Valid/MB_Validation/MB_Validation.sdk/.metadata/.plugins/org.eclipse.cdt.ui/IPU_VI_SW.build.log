@@ -1,0 +1,6 @@
+23:38:37 **** Incremental Build of configuration Debug for project IPU_VI_SW ****
+make all 
+make: Nothing to be done for `all'.
+
+23:38:37 Build Finished (took 160ms)
+

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Mar 22 16:55:31 2019
+# Process ID: 4200
+# Current directory: E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3512 E:\ECE532\WorkSpace\IPU_proj\differ\differ_proj\differ_proj.xpr
+# Log file: E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj/vivado.log
+# Journal file: E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj/differ_proj.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj/tb_rgb444_behav.wcfg
+source tb_rgb444.tcl
+relaunch_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+save_wave_config {E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj/tb_rgb444_behav.wcfg}
+close_sim
+launch_simulation -mode post-synthesis -type timing
+open_wave_config E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj/tb_rgb444_behav.wcfg
+source tb_rgb444.tcl
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+open_wave_config E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj/tb_rgb444_behav.wcfg
+source tb_rgb444.tcl
+close_sim
+close_sim

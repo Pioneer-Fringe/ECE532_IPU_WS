@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Mar 22 17:53:31 2019
+# Process ID: 16616
+# Current directory: E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj/differ_proj.runs/synth_1
+# Command line: vivado.exe -log rgb444diff.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb444diff.tcl
+# Log file: E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj/differ_proj.runs/synth_1/rgb444diff.vds
+# Journal file: E:/ECE532/WorkSpace/IPU_proj/differ/differ_proj/differ_proj.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source rgb444diff.tcl -notrace
